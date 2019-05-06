@@ -52,7 +52,7 @@ summary(analysis_tbl)
 glimpse(analysis_tbl)
 ```
 
-categorical casting
+categorical casting (using useful variables)
 ```{r}
 analysis_tbl_clean <- analysis_tbl %>% 
   mutate(price = gsub("\\$", "", price), #remove $ signs which turned data from character to numeric
